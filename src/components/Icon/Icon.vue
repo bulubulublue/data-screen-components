@@ -1,7 +1,10 @@
 <template>
-  <svg :style="{...style}">
-    <use :href="iconName"></use>
-  </svg>
+  <div class="icon-wrapper"
+       :style="{...style}">
+    <svg class="icon">
+      <use :href="iconName"></use>
+    </svg>
+  </div>
 </template>
 <script>
 export default {

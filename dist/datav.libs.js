@@ -15,8 +15,8 @@
     width: "0",
     height: ""
   };
-  const _hoisted_2 = /*#__PURE__*/vue.createStaticVNode("<defs data-v-7cc4288f><symbol id=\"more\" viewBox=\"0 0 100 100\" data-v-7cc4288f><circle r=\"5\" cx=\"20\" cy=\"25\" fill=\"currentColor\" data-v-7cc4288f></circle><circle r=\"5\" cx=\"20\" cy=\"50\" fill=\"currentColor\" data-v-7cc4288f></circle><circle r=\"5\" cx=\"20\" cy=\"75\" fill=\"currentColor\" data-v-7cc4288f></circle><line x1=\"40\" y1=\"25\" x2=\"90\" y2=\"25\" stroke-width=\"8\" stroke=\"currentColor\" data-v-7cc4288f></line><line x1=\"40\" y1=\"50\" x2=\"90\" y2=\"50\" stroke-width=\"8\" stroke=\"currentColor\" data-v-7cc4288f></line><line x1=\"40\" y1=\"75\" x2=\"90\" y2=\"75\" stroke-width=\"8\" stroke=\"currentColor\" data-v-7cc4288f></line></symbol><symbol id=\"arrowRight\" viewBox=\"0 0 100 100\" data-v-7cc4288f><polyline points=\"20 10,80 50,20,90 \" fill=\"currentColor\" data-v-7cc4288f></polyline></symbol></defs>", 1);
-  const _hoisted_3 = [_hoisted_2];
+  const _hoisted_2$1 = /*#__PURE__*/vue.createStaticVNode("<defs data-v-7cc4288f><symbol id=\"more\" viewBox=\"0 0 100 100\" data-v-7cc4288f><circle r=\"5\" cx=\"20\" cy=\"25\" fill=\"currentColor\" data-v-7cc4288f></circle><circle r=\"5\" cx=\"20\" cy=\"50\" fill=\"currentColor\" data-v-7cc4288f></circle><circle r=\"5\" cx=\"20\" cy=\"75\" fill=\"currentColor\" data-v-7cc4288f></circle><line x1=\"40\" y1=\"25\" x2=\"90\" y2=\"25\" stroke-width=\"8\" stroke=\"currentColor\" data-v-7cc4288f></line><line x1=\"40\" y1=\"50\" x2=\"90\" y2=\"50\" stroke-width=\"8\" stroke=\"currentColor\" data-v-7cc4288f></line><line x1=\"40\" y1=\"75\" x2=\"90\" y2=\"75\" stroke-width=\"8\" stroke=\"currentColor\" data-v-7cc4288f></line></symbol><symbol id=\"arrowRight\" viewBox=\"0 0 100 100\" data-v-7cc4288f><polyline points=\"20 10,80 50,20,90 \" fill=\"currentColor\" data-v-7cc4288f></polyline></symbol></defs>", 1);
+  const _hoisted_3 = [_hoisted_2$1];
   function render$3(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("svg", _hoisted_1$1, _hoisted_3);
   }
@@ -103,15 +103,19 @@
     }
   };
 
-  const _hoisted_1 = ["href"];
+  const _hoisted_1 = {
+    class: "icon"
+  };
+  const _hoisted_2 = ["href"];
   function render(_ctx, _cache, $props, $setup, $data, $options) {
-    return vue.openBlock(), vue.createElementBlock("svg", {
+    return vue.openBlock(), vue.createElementBlock("div", {
+      class: "icon-wrapper",
       style: vue.normalizeStyle({
         ...$props.style
       })
-    }, [vue.createElementVNode("use", {
+    }, [(vue.openBlock(), vue.createElementBlock("svg", _hoisted_1, [vue.createElementVNode("use", {
       href: $setup.iconName
-    }, null, 8 /* PROPS */, _hoisted_1)], 4 /* STYLE */);
+    }, null, 8 /* PROPS */, _hoisted_2)]))], 4 /* STYLE */);
   }
 
   script.render = render;
