@@ -2,7 +2,7 @@
   "name": "rollup-datav-libs",
   "version": "1.0.1",
   "description": "datav commponents library",
-  "main": "dist/datav.libs.js",
+  "main": "dist/datav.libs.js", 
   "scripts": {
     "dev": "rollup -wc rollup.config.dev.js",
     "build": "rollup -c rollup.config.dev.js",
