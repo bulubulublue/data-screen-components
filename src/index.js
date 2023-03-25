@@ -6,6 +6,7 @@ import Loading from './components/Loading/index'
 import Flybox from './components/Flybox/index'
 import Container from './components/Container/index'
 import Logo from './components/Logo/index'
+import CountTo from './components/CountTo/index'
 
 export default function (Vue) {
   Vue.use(Test)
@@ -16,4 +17,5 @@ export default function (Vue) {
   Vue.use(Flybox)
   Vue.use(Container)
   Vue.use(Logo)
+  Vue.use(CountTo)
 }

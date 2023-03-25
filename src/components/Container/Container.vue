@@ -27,8 +27,10 @@ export default {
             width.value = props.options.width
             height.value = props.options.height
           } else {
-            width.value = containerRef.value.clientWidth
-            height.value = containerRef.value.clientHeight
+            if (containerRef.value) {
+              width.value = containerRef.value.clientWidth
+              height.value = containerRef.value.clientHeight
+            }
           }
 
           // 参数为0，则获取视口尺寸
@@ -45,9 +47,12 @@ export default {
       if (width.value && height.value) {
         containerRef.value.style.width = `${width.value}px`
         containerRef.value.style.height = `${height.value}px`
-      } else {// 是否可以删除？
-        containerRef.value.style.width = `${viewportWidth.value}px`
-        containerRef.value.style.height = `${viewportHeight.value}px`
+      } else {
+        if (containerRef.value) {
+          containerRef.value.style.width = `${viewportWidth.value}px`
+          containerRef.value.style.height = `${viewportHeight.value}px`
+        }// 是否可以删除？
+
       }
     }
 
@@ -61,8 +66,7 @@ export default {
       //计算宽高压缩比
       const widthScale = currentWidth / realWidth
       const heightScale = currentHeight / realHeight
-
-      containerRef.value.style.transform = `scale(${widthScale},${heightScale})`
+      containerRef.value && (containerRef.value.style.transform = `scale(${widthScale},${heightScale})`)
     }
 
     const resizeCallback = async () => {
