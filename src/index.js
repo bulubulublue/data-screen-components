@@ -4,6 +4,7 @@ import Test3 from './components/Test3/index'
 import Icon from './components/Icon/index'
 import Loading from './components/Loading/index'
 import Flybox from './components/Flybox/index'
+import Container from './components/Container/index'
 
 export default function (Vue) {
   Vue.use(Test)
@@ -12,4 +13,5 @@ export default function (Vue) {
   Vue.use(Icon)
   Vue.use(Loading)
   Vue.use(Flybox)
+  Vue.use(Container)
 }
