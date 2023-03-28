@@ -22,3 +22,13 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+.icon-wrapper {
+  height: 100%;
+  width: 100%;
+}
+.icon {
+  height: 100%;
+  width: 100%;
+}
+</style>
